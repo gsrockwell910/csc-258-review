@@ -3,6 +3,8 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .xml
+.idea
+csc258Review.iml
 
 ### Eclipse ###
 .apt_generated
