@@ -7,7 +7,7 @@ public class Arena
 
     private int maxCapacity;
     private int yearOpened;
-    private Tenant team;
+    private final Tenant team;
 
     // Constructors
     public Arena() {
@@ -74,6 +74,8 @@ public class Arena
 
     // toString
     public String toString() {
-        return String.format("%s %s %s %d %d %s", venueName, city, state, maxCapacity, yearOpened, team.toString());
+        return String.format("%s %s %s %d %d %s",
+                this.venueName, this.city, this.state,
+                this.maxCapacity, this.yearOpened, this.team.toString());
     }
 }
