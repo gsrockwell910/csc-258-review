@@ -46,18 +46,19 @@ public class RockwellDriver
             venueName = inputFile.nextLine();
             city = inputFile.nextLine();
             state = inputFile.nextLine();
+
             maxCapacity = inputFile.nextInt();
             yearOpened = inputFile.nextInt();
+
+            // Clear the buffer
+            inputFile.nextLine();
+
             teamName = inputFile.nextLine();
             sport = inputFile.nextLine();
             league = inputFile.nextLine();
-
             // Check for end of file
             if( inputFile.hasNext() ) {
                 // Skip blank line
-                inputFile.nextLine();
-            }
-            if( inputFile.hasNext() ) {
                 inputFile.nextLine();
             }
 
@@ -72,6 +73,8 @@ public class RockwellDriver
         // Close file
         inputFile.close();
 
+        // Print blank line before starting output
+        System.out.println();
         // Display output using toString methods
         for(Arena arena : arenaList) {
             System.out.println(arena.toString());

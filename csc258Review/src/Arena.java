@@ -176,8 +176,8 @@ public class Arena
         @return     A formatted string representation of an Arena object
     **/
     public String toString() {
-        return String.format("%s %s %s %d %d %s",
+        return String.format("Venue:\t\t\t%s\nLocation:\t\t%s, %s\nCapacity:\t\t%d\nYear Opened:\t%d\n%s\n",
                 this.venueName, this.city, this.state,
-                this.maxCapacity, this.yearOpened, this.team.toString());
+                this.maxCapacity, this.yearOpened, this.team);
     }
 }

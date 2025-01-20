@@ -115,6 +115,6 @@ public class Tenant
         @return     A formatted string representation of a Tenant object
     **/
     public String toString() {
-        return String.format("%s %s %s", this.teamName, this.sport, this.league);
+        return String.format("Team Name:\t\t%s\nSport:\t\t\t%s\nLeague:\t\t\t%s", this.teamName, this.sport, this.league);
     }
 }
