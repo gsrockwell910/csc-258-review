@@ -1,4 +1,6 @@
 /*
+    Tenant
+
     The Tenant class models a sports team
 **/
 public class Tenant

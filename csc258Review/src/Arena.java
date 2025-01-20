@@ -1,4 +1,6 @@
 /*
+    Arena
+
     The Arena class models an arena for sports teams
 **/
 public class Arena
