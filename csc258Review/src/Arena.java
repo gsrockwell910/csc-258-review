@@ -11,59 +11,69 @@ public class Arena
 
     // Constructors
     public Arena() {
-
+        this.venueName = "";
+        this.city = "";
+        this.state = "";
+        this.maxCapacity = -1;
+        this.yearOpened = -1;
+        this.team = new Tenant();
     }
 
     public Arena(String v, String c, String s,
                  int m, int y,
                  String teamName, String sport, String league) {
-
+        this.venueName = v;
+        this.city = c;
+        this.state = s;
+        this.maxCapacity = m;
+        this.yearOpened = y;
+        this.team = new Tenant(teamName, sport, league);
     }
 
     // Setters
     public void setVenueName(String v) {
-
+        this.venueName = v;
     }
 
     public void setCity(String c) {
-
+        this.city = c;
     }
 
     public void setState(String s) {
-
+        this.state = s;
     }
 
     public void setMaxCapacity(int m) {
-
+        this.maxCapacity = m;
     }
 
     public void setYearOpened(int y) {
-
+        this.yearOpened = y;
     }
 
     // Getters
     public String getVenueName() {
-        return null;
+        return this.venueName;
     }
 
     public String getCity() {
-        return null;
+        return this.city;
     }
 
     public String getState() {
-        return null;
+        return this.state;
     }
 
     public int getMaxCapacity() {
-        return 0;
+        return this.maxCapacity;
     }
 
     public int getYearOpened() {
-        return 0;
+        return this.yearOpened;
     }
 
     // toString
     public String toString() {
-        return String.format("");
+        return String.format("%s %s %s %d %d %s", venueName, city, state, maxCapacity, yearOpened, team.toString());
     }
 }
