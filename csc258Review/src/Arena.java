@@ -165,6 +165,7 @@ public class Arena
         return this.yearOpened;
     }
 
+    // toString method
     /*
         toString
 
@@ -172,7 +173,6 @@ public class Arena
 
         @return     A formatted string representation of an Arena object
     **/
-    // toString
     public String toString() {
         return String.format("%s %s %s %d %d %s",
                 this.venueName, this.city, this.state,
