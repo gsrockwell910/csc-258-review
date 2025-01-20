@@ -56,6 +56,7 @@ public class RockwellDriver
             teamName = inputFile.nextLine();
             sport = inputFile.nextLine();
             league = inputFile.nextLine();
+
             // Check for end of file
             if( inputFile.hasNext() ) {
                 // Skip blank line
